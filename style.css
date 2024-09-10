@@ -1,0 +1,91 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: ghostwhite;
+  color: #1b1b1b;
+  overflow-x: hidden;
+}
+
+*:root {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+header {
+  margin: -8px;
+  padding: 10px;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+
+.left-side {
+  font-size: 60px;
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#left-corner {
+  height: fit-content;
+  padding: 1rem;
+  margin-left: -2rem;
+  font-style: oblique;
+  font-size: large;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.lists {
+  margin-bottom: 2rem;
+}
+
+#center {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  height: auto;
+  padding: 5px;
+  font-size: larger;
+  text-align: center;
+}
+#right-corner {
+  height: 100%;
+  padding: 10px;
+  font-style: oblique;
+  font-size: x-large;
+  font-weight: bold;
+}
+figure {
+  height: auto;
+  width: fit-content;
+  /* border: #1b1b1b 2px solid; */
+  margin: 63px auto;
+  display: block;
+}
+img {
+  height: 25vh;
+  width: 25vw;
+}
+.corner {
+  text-align: right;
+}
+
+@media (max-width: 430px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .right-side-img{
+    display: inline-block;
+  }
+}
